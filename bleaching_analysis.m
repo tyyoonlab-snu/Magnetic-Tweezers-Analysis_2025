@@ -1,11 +1,11 @@
 function bleaching_analysis_main()
     % --- Configuration ---
     % Set the base folder containing the experimental data.
-    baseFolder = 'D:\SA\TRPV1 co ip test\250709\before\GFP';
+    baseFolder = '';
 
     if contains(baseFolder, 'RFP', 'IgnoreCase', true)
         fprintf('--- Detected RFP in folder name. Using RFP parameters. ---\n');
-        fluorophore_type = 'RFP';
+        fluorophore_type = 'RFP'; %mCherry 
         
         % --- Trace Extraction & Analysis Parameters ---
         roiSize = 2; % Size of the square ROI for intensity measurement.
